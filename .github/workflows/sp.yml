@@ -23,3 +23,10 @@ jobs:
 
         - name: checkout repo files
           run: ls
+
+        - name: download artifact
+          uses: actions/download-artifact@v3
+          with:
+            name: dragon-file
+            path: dragon.txt
+
