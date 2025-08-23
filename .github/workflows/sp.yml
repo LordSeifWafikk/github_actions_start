@@ -26,9 +26,11 @@ jobs:
 
         - name: upload artifact
           uses: actions/upload-artifact@v3
+          with:
+            name: dragon-file
+            path: dragon.txt
 
         - name: download artifact
           uses: actions/download-artifact@v3
           with:
             name: dragon-file
-
